@@ -1,10 +1,11 @@
 # Ranger_HDP
 Automated Script to submit rules in Ranger HortonWorks based on CSV file.
 
-# Environment Hortonworks 2.6.4 with Ranger.
-# Python 2.7.5
+# Environment
+Hortonworks 2.6.4 with Ranger.
+Python 2.7.5
 
-# This script is working only for new rules, appending rules is still developing.
+PS: This script is working only for new rules, appending rules is still developing.
 
 1 - Download example-csv.xls and fill the columns as you need, after that remove the first line (guide) and export this xls as csv file.
 
@@ -13,7 +14,7 @@ Automated Script to submit rules in Ranger HortonWorks based on CSV file.
 3 - Change the local variables as you wish, following the configurations of your environment.If you have only one environment just set as "prod"
 
 4 - run python as below
-# python hive_policies.py -e PROD -f example.csv
+#python hive_policies.py -e PROD -f example.csv
 
 # For more information:
 $ python hive_policies.py -h
