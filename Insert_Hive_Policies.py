@@ -109,7 +109,7 @@ def Insert_Policy():
             jsonlogfile.close()
 
             print("{}\n".format(CurlCmd))
-            #os.system(CurlCmd)
+            os.system(CurlCmd)
 
 if __name__ == '__main__':
     check_args()
