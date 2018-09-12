@@ -19,10 +19,10 @@ $ python Hive_policies.py -h
 usage: Hive_policies.py [-h] -e ENVIRONMENT -f FILE [-t TYPE]
 
 optional arguments:
-  -h, --help            show this help message and exit
-  -e ENVIRONMENT, --environment ENVIRONMENT
+-h, --help            show this help message and exit
+-e ENVIRONMENT, --environment ENVIRONMENT
                         Environment prod or dev
-  -f FILE, --file FILE  FileXXXXXXXXX.csv
-  -t TYPE, --type TYPE  use "insert" for new policies or "append" for existing
+-f FILE, --file FILE  FileXXXXXXXXX.csv
+-t TYPE, --type TYPE  use "insert" for new policies or "append" for existing
                         policies
 
