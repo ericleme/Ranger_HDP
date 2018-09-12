@@ -22,7 +22,7 @@ js = json_structure
 
 def check_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-e','--environment', help='Environment prod or mini', required=True)
+    parser.add_argument('-e','--environment', help='Environment prod or dev', required=True)
     parser.add_argument('-f','--file', help='REQXXXXXXXXX.csv', required=True)
     parser.add_argument('-t','--type', help='use "insert" for new policies or "append" for existing policies', required=False)
     args = parser.parse_args()
@@ -44,8 +44,8 @@ def check_args():
     if (EnvSet == "prod"):
         df.insert(0,'PRD_hive')
         Env=[ProdUser,ProdPass,ProdSrv]
-    elif (EnvSet == "mini"):
-        df.insert(0,'NONPROD_hive')
+    elif (EnvSet == "dev"):
+        df.insert(0,'DEV_hive')
         Env=[NprodUser,NprodPass,NprodSrv]
 
 def check_rangerpol():
