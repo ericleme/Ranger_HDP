@@ -79,6 +79,7 @@ def Open_RangerList():
             csvList = line.split(';')
             cl = csvList[1::]
             permlist = (cl[6:12])
+            cl[1::] =  map(lambda x:x.lower(),cl[1::])
             if EnvType == "append":
                 Backup_Policy()
             else:
